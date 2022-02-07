@@ -1,5 +1,27 @@
 # BGL Coding Exercise - Game Of Life
 
+Welcome to the BGL Coding Exercise. We appreciate you taking the time to complete this assignment, and we're excited about the prospect of you joining the team!
+
+The goal of this assignment is to get a sense of how you think and solve problems. If you're having any issues running the project, please don't hesitate to contact us.
+
+## How it works
+
+- In [Github](https://github.com), please import this project into your account
+
+![github import project](./img/github-import-project.jpg)
+
+- In import settings dialog:
+  - old repository clone url: https://github.com/bgl-api-doc/bgl-coding-exercise.git
+  - give the repo a new name
+  - make it private
+
+![github import settings](./img/github-import-settings.jpg)
+
+- Once you finish the exercise, please invite the user we mentioned in the email to your new repo
+![github invite user 1](./img/github-invite-1.jpg)
+![github invite user 2](./img/github-invite-2.jpg)
+
+
 ## Rule of Conway's Game of Life.
 
 Given a 200*200 square cells, each cell is in one of two possible states, alive or dead, or "populated" or "unpopulated". Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:
@@ -14,16 +36,28 @@ The requirement of the coding exercise:
 Given a 200*200 matrix and the coordinates of initial live cells, please implement a program to output the next 100 states according to Conway's Game of Life.
 
 eg.
-intput: [[1, 1]]
-Output of the next 100 state:
-1: []
+- Scenario 1
+  - intput:
+```groovy
+[[1, 1]]
+```
+  - Output of the next 100 state:
+```groovy
+[]
+```
 
-intput: [[5, 5], [6, 5], [7, 5], [5, 6], [6, 6], [7, 6]]
-Output of the next 100 state:
+- Scenario 2
+  - input:
+  ```groovy
+  [[5, 5], [6, 5], [7, 5], [5, 6], [6, 6], [7, 6]]
+  ```
+  - output of the next 100 state:
+```groovy
 1: [[5, 5], [6, 4] [7, 5], [5, 6], [6, 7], [7, 6]]
 2: [[5, 5], [6, 4] [7, 5], [5, 6], [6, 7], [7, 6]]
 3: [[5, 5], [6, 4] [7, 5], [5, 6], [6, 7], [7, 6]]
 ...
+```  
 
 ## Notes:
 1. Parsing the input, eg. getting input from the terminal as a string and parsing it to an array is not our focus. You are free to design the application to take any java data types (eg. array of arrays) as the input of your solution.
